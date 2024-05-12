@@ -8,6 +8,8 @@
     --secundary-color: #F8FAE5;
     --tertiary-color: #B19470;
     --quaternary-color: #76453B;
+    --typography-title: 'Lucida Sans', 'Lucida Sans Regular';
+    --typography-p: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 header {
     background-color: var(--primary-color);
@@ -50,12 +52,43 @@ section {
 
 #banner h1 {
     font-size: 80px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+   font-family: var(--typography-title);
 }
 
 #banner p {
     width: 70%;
-    font-size: 25px;    
+    font-size: 25px;
+    font-family: var(--typography-p);
 }
+
+#courses {
+    text-align: center;
+    padding: 30px;
+}
+
+#courses .cont-grid-cours {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+#courses .card {
+    background-color: #43766C;
+    padding: 20px;
+    padding: 80px;
+
+}
+
+#courses h3 {
+    font-family: var(--typography-title);
+    font-size: 40px;
+}
+
+#courses p {
+    font-family: var(--typography-p);
+    font-size: 20px;
+}
+
+
+
 
